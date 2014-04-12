@@ -7,6 +7,7 @@ $(document).ready(function(){
 	});
 	
 	$('body').on('click', '.highLightsLink', function () {
+			$("#overlayPopup").html("Loading...");
 			$("#overlayPopup").load("highlights/" + $(this).attr('id') + ".html");
 			$("#overlayPopup").popup("show");
 	});

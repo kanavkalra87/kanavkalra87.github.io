@@ -1476,3 +1476,13 @@ p a:hover, a:hover {
 #myGallery img {
     border: 2px solid #52697E;
 }
+<!--Classes For popup >>-->
+.well {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display:none;
+    margin:1em;
+}
+pre.prettyprint {
+    padding: 9px 14px;
+}
+<!--Classes For popup <<-->

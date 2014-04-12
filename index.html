@@ -1,7 +1,44 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.hahah</p>
-</body>
-</html>
+	<!DOCTYPE html>
+	<!-- Website template by freewebsitetemplates.com -->
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vivek Singh Memorial Trust - Home</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<!--<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css" />-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+		<script src="js/jquery1.11.0.min.js"></script>
+		 <!-- Include jQuery Popup Overlay -->
+		<script src="js/jquery.popupoverlay.js"></script>
+		<script src="js/CustomEvents.js"></script>
+		<link type="text/css" rel="stylesheet" href="light-gallery/css/lightGallery.css" /> 
+		<script src="light-gallery/js/lightGallery.min.js"></script>
+
+		<script> 
+			$(function(){
+				$("#header").load("header.html"); 
+  				$("#footer").load("footer.html"); 
+				$("#highlights").load("highlightsMain.html"); 
+				$("#dynamicBody").load("htmlPages/home.html"); 
+			});
+
+		</script>
+
+
+	</head>
+	<body>
+		<div id = "header" class="header"></div>
+		<div class="body">
+			<div class="contact">
+				<div id = "highlights"></div>
+	
+				<div id="dynamicBody">
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="footer">
+		</div>
+	</body>
+	</html>

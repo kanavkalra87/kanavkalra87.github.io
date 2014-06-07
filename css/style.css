@@ -501,7 +501,7 @@ p a:hover, a:hover {
 	padding:0 0 0 20px;
 }
 .body .gallery-details {
-	margin:0 auto 445px;
+	margin:0 auto 0px 210px;
 	padding:41px 10px 0;
 	width:940px;
 }
@@ -584,6 +584,7 @@ p a:hover, a:hover {
 	height:auto;
 	width:auto;
 }
+/*
 .body .gallery-details div div > a {
 	background:url(../images/buttons.png) no-repeat 0 -42px;
 	display:block;
@@ -591,6 +592,7 @@ p a:hover, a:hover {
 	text-indent:-99999px;
 	width:189px;
 }
+*/
 .body .gallery-details div div > a:hover {
 	filter:alpha(opacity=90);/* Needed for IE8 and old versions */
 	opacity:0.9;

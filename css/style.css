@@ -43,7 +43,8 @@ p a:hover, a:hover {
 }
 /*------------------------- Header -------------------------*/
 .header {
-	background:url(../images/bg-header.jpg) repeat-x;
+	/*background:url(../images/bg-header.jpg) repeat-x;*/
+	background-color:white;
 	height:125px;
 }
 .header div {
@@ -52,6 +53,7 @@ p a:hover, a:hover {
 	padding:0 10px;
 	position:relative;
 	width:940px;
+	height:125px;
 }
 .header div a#logo {
 	float:left;
@@ -1407,7 +1409,7 @@ p a:hover, a:hover {
 	background:url(../images/interface.png) no-repeat -234px -27px;
 }
 .footer div {
-	margin:27px auto 0;
+	margin:47px auto 0;
 	overflow:hidden;
 	padding:0 10px;
 	width:940px;
@@ -1478,7 +1480,7 @@ p a:hover, a:hover {
 #myGallery img {
     border: 2px solid #52697E;
 }
-<!--Classes For popup >>-->
+/**Classes For popup >>**/
 .well {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     display:none;
@@ -1487,4 +1489,56 @@ p a:hover, a:hover {
 pre.prettyprint {
     padding: 9px 14px;
 }
-<!--Classes For popup <<-->
+/**Classes For popup **/
+
+/** Navigation **/
+#navigation {
+	background: url(../images/bg-navigation.png) no-repeat;
+	clear: both;
+	height: 50px;
+	width: 931px;
+	margin: 0 auto;
+	padding: 1px;
+}
+#navigation ul {
+	display: inline-block;
+	width: 860px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#navigation li {
+	float: left;
+	background-position: 0 -118px;
+	background-repeat: no-repeat;
+	height: 49px;
+	width: 122px;
+	margin: 0;
+	padding-left: 1px;
+	text-align: center;
+}
+#navigation li:first-child {
+	background: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+#navigation li a {
+	color: #fff;
+	display: block;
+	font: bold 14px/48px Arial, Helvetica, sans-serif;
+	height: 49px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#navigation li a:hover {
+	background-position: 0 -59px;
+	color: #6d6157;
+}
+#navigation li.selected a {
+	background-position: 0 0;
+	color: #e4e1bd;
+}
+#navigation li, #navigation li a:hover, #navigation li.selected a {
+	background-image: url(../images/bg-menu.png);
+	background-repeat: repeat-x;
+}

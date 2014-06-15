@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	$('body').on('click', '.headerLink', function () {
 		$(document).attr("title", "Vivek Singh Memorial Trust - " + $(this).text());
-		$("#headerUL").find(".selected").removeClass("selected");
-		$(this).parent().addClass("selected");
+		$("#TopMenu").find(".topmenuSelected").removeClass("topmenuSelected");
+		$(this).parent().addClass("topmenuSelected");
 		if($(this).text() == "Projects"){
 			$("#generalBody").hide();
 			$("#projectsBody").show();

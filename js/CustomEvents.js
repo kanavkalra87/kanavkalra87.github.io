@@ -35,5 +35,11 @@ $(document).ready(function(){
 		$("#projectsBody").show();
 		$("#projectsBody").load("htmlPages/projects.html");
 	});
+	$('body').on('click', '#newsButton', function () {
+		$( "#newsChildDiv" ).slideToggle( "slow");
+	});
+	$('body').on('click', '#impLinks', function () {
+		$( "#impLinksChildDiv" ).slideToggle( "slow");
+	});
 });
 

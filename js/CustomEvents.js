@@ -45,3 +45,95 @@ $(document).ready(function(){
 	});
 	
 });
+
+(function(){
+	appRouter = Backbone.Router.extend({
+		routes: {
+			'': 'home',
+			'home': 'home',
+			'ourMission': 'ourMission',
+			'scholarships': 'scholarships',
+			'projects': 'projects',
+			'highlights': 'highlights',
+			'workingCommitte':'workingCommitte',
+			'about':'about',
+			'contact':'contact',
+			'VSMemorialScholarship':'VSMemorialScholarship',
+			'VivekEkUjjwalBhavishya':'VivekEkUjjwalBhavishya',
+			'vsUjwalMoreDetails':'vsUjwalMoreDetails',
+			
+		},
+		loadViewWithSideBar: function(pageName){
+			window.scrollTo(0, 0);
+			$(document).attr("title", "Vivek Singh Memorial Trust - " +pageName);
+			$("#TopMenu").find(".topmenuSelected").removeClass("topmenuSelected");
+			$("#"+pageName).parent().addClass("topmenuSelected");
+			$("#generalBody").show();
+			$("#projectsBody").hide();
+			$("#dynamicBody").load("htmlPages/"+pageName+".html");
+		},
+		loadViewWithoutSideBar: function(pageName){
+			window.scrollTo(0, 0);
+			$(document).attr("title", "Vivek Singh Memorial Trust - " + pageName);
+			$("#TopMenu").find(".topmenuSelected").removeClass("topmenuSelected");
+			$("#"+pageName).parent().addClass("topmenuSelected");
+			
+			$("#generalBody").hide();
+			$("#projectsBody").show();
+			$("#projectsBody").load("htmlPages/" +pageName +  ".html");
+		},
+		home: function(){
+			this.loadViewWithSideBar("home");
+		},
+		ourMission : function(){
+			this.loadViewWithSideBar("ourMission");
+		},
+		scholarships : function(){
+			this.loadViewWithSideBar("scholarships");
+		},
+		projects : function(){
+			this.loadViewWithoutSideBar("projects");
+		},
+		highlights : function(){
+			this.loadViewWithSideBar("highlights");
+		},
+		workingCommitte : function(){
+			this.loadViewWithSideBar("workingCommitte");
+		},
+		about : function(){
+			this.loadViewWithSideBar("about");
+		},
+		contact : function(){
+			this.loadViewWithSideBar("contact");
+		},
+		
+		loadProjectDetails: function(){
+			$(document).attr("title", "Vivek Singh Memorial Trust - Projects");
+			$("#TopMenu").find(".topmenuSelected").removeClass("topmenuSelected");
+			$("#projects").parent().addClass("topmenuSelected");
+			$("#generalBody").hide();
+			$("#projectsBody").show();
+		},
+		VSMemorialScholarship: function(){
+			window.scrollTo(0, 0);
+			this.loadProjectDetails();
+			$("#projectsBody").load("projects/VSMemorialScholarship.html");
+		},
+		VivekEkUjjwalBhavishya: function(){
+			window.scrollTo(0, 0);
+			this.loadProjectDetails();			
+			$("#projectsBody").load("projects/VivekEkUjjwalBhavishya.html");
+		},
+		vsUjwalMoreDetails: function(){
+			window.scrollTo(0, 0);
+			this.loadProjectDetails();
+			$("#projectsBody").load("projects/vsUjwalMoreDetails.html");
+		},
+		
+		
+	});
+
+new appRouter;
+Backbone.history.start();
+
+})();

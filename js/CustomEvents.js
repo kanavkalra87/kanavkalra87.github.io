@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	
 	$('body').on('click', '.headerLink', function () {
 		$(document).attr("title", "Vivek Singh Memorial Trust - " + $(this).text());
 		$("#TopMenu").find(".topmenuSelected").removeClass("topmenuSelected");
@@ -41,5 +43,5 @@ $(document).ready(function(){
 	$('body').on('click', '#impLinks', function () {
 		$( "#impLinksChildDiv" ).slideToggle( "slow");
 	});
+	
 });
-

@@ -1559,7 +1559,7 @@ pre.prettyprint {
 	overflow: hidden;
 }
 .navigatioBarWrapper{
-	width: 887px;/*718px;*/
+	width: 718px;/*887px;*/
 	margin: 0px auto 20px auto;
 	overflow: hidden;
 }
@@ -1645,7 +1645,4 @@ pre.prettyprint {
     position: relative;
    width:100%;
 }
-.fb-like span,.fb-like iframe {
-    width: 127px! important;
-    height: 25px! important;
-}
+

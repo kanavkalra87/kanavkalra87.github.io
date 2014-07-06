@@ -24,7 +24,7 @@ $(document).ready(function(){
 	});
 	
 	$('body').on('click', '.highLightsLink', function () {
-		$("#overlayPopup").html("Loading...");
+		$("#overlayPopup").html("<img src='images/ajax-loader.gif'/>");
 		$("#overlayPopup").load("highlights/" + $(this).attr('id') + ".html");
 		$("#overlayPopup").popup("show");
 	});
@@ -51,7 +51,7 @@ $(document).ready(function(){
 		$( "#impLinksChildDiv" ).slideToggle( "slow");
 	});
 	$('body').on('click', '#donateNow', function () {
-		$("#overlayPopup").html("Loading...");
+		$("#overlayPopup").html("<img src='images/ajax-loader.gif'/>");
 		$("#overlayPopup").load("htmlPages/donateNow.html");
 		$("#overlayPopup").popup("show");
 	});

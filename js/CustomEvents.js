@@ -1,5 +1,12 @@
 $(document).ready(function(){
-
+	$(window).scroll(function() {
+	  if($(window).scrollTop() > 120){
+		$("#navigation").addClass("navigationBarOnTop");
+	  }else{
+		$("#navigation").removeClass("navigationBarOnTop");
+		}
+		
+	});
 	
 	$('body').on('click', '.headerLink', function () {
 		$(document).attr("title", "Vivek Singh Memorial Trust - " + $(this).text());
@@ -10,8 +17,8 @@ $(document).ready(function(){
 			$("#projectsBody").show();
 			$("#projectsBody").load("htmlPages/" + $(this).attr('id') + ".html");
 		}else{
-			$("#generalBody").show();
 			$("#projectsBody").hide();
+			$("#generalBody").show();			
 			$("#dynamicBody").load("htmlPages/" + $(this).attr('id') + ".html");
 		}
 	});
@@ -43,7 +50,11 @@ $(document).ready(function(){
 	$('body').on('click', '#impLinks', function () {
 		$( "#impLinksChildDiv" ).slideToggle( "slow");
 	});
-	
+	$('body').on('click', '#donateNow', function () {
+		$("#overlayPopup").html("Loading...");
+		$("#overlayPopup").load("htmlPages/donateNow.html");
+		$("#overlayPopup").popup("show");
+	});
 });
 
 (function(){
@@ -64,23 +75,25 @@ $(document).ready(function(){
 			
 		},
 		loadViewWithSideBar: function(pageName){
-			window.scrollTo(0, 0);
+			//window.scrollTo(0, 0);
 			$(document).attr("title", "Vivek Singh Memorial Trust - " +pageName);
 			$("#TopMenu").find(".topmenuSelected").removeClass("topmenuSelected");
-			$("#"+pageName).parent().addClass("topmenuSelected");
-			$("#generalBody").show();
+			$("#"+pageName+"Id").parent().addClass("topmenuSelected");
 			$("#projectsBody").hide();
+			$("#generalBody").show();			
 			$("#dynamicBody").load("htmlPages/"+pageName+".html");
+			window.scrollTo(0, 0);
 		},
 		loadViewWithoutSideBar: function(pageName){
-			window.scrollTo(0, 0);
+			//window.scrollTo(0, 0);
 			$(document).attr("title", "Vivek Singh Memorial Trust - " + pageName);
 			$("#TopMenu").find(".topmenuSelected").removeClass("topmenuSelected");
-			$("#"+pageName).parent().addClass("topmenuSelected");
+			$("#"+pageName+"Id").parent().addClass("topmenuSelected");
 			
 			$("#generalBody").hide();
 			$("#projectsBody").show();
 			$("#projectsBody").load("htmlPages/" +pageName +  ".html");
+			window.scrollTo(0, 0);
 		},
 		home: function(){
 			this.loadViewWithSideBar("home");
@@ -110,24 +123,27 @@ $(document).ready(function(){
 		loadProjectDetails: function(){
 			$(document).attr("title", "Vivek Singh Memorial Trust - Projects");
 			$("#TopMenu").find(".topmenuSelected").removeClass("topmenuSelected");
-			$("#projects").parent().addClass("topmenuSelected");
+			$("#projectsId").parent().addClass("topmenuSelected");
 			$("#generalBody").hide();
 			$("#projectsBody").show();
 		},
 		VSMemorialScholarship: function(){
-			window.scrollTo(0, 0);
+			//window.scrollTo(0, 0);
 			this.loadProjectDetails();
 			$("#projectsBody").load("projects/VSMemorialScholarship.html");
+			window.scrollTo(0, 0);
 		},
 		VivekEkUjjwalBhavishya: function(){
-			window.scrollTo(0, 0);
+			//window.scrollTo(0, 0);
 			this.loadProjectDetails();			
 			$("#projectsBody").load("projects/VivekEkUjjwalBhavishya.html");
+			window.scrollTo(0, 0);
 		},
 		vsUjwalMoreDetails: function(){
-			window.scrollTo(0, 0);
+			//window.scrollTo(0, 0);
 			this.loadProjectDetails();
 			$("#projectsBody").load("projects/vsUjwalMoreDetails.html");
+			window.scrollTo(0, 0);
 		},
 		
 		

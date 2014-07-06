@@ -1440,7 +1440,7 @@ p a:hover, a:hover {
 }
 .footer div p {
 	color:#838383;
-	float:right;
+	float:center;
 	font-size:11px;
 	line-height:24px;
 	margin:0;
@@ -1466,6 +1466,7 @@ p a:hover, a:hover {
 }
 .ContactTable {
     height: 250px;
+	width:603px;
 }
 .ContactTable a {
     text-decoration: none;
@@ -1553,7 +1554,7 @@ pre.prettyprint {
 .wrapper {
 	width: 990px;
 	background:url(../images/bg-body.jpg);
-	margin: 34px auto 20px auto;
+	margin: 7px auto 20px auto;
 	border: 3px solid #28a1cc;
 	padding: 10px;
 	overflow: hidden;
@@ -1644,5 +1645,13 @@ pre.prettyprint {
     font-weight: bold;
     position: relative;
    width:100%;
+}
+.navigationBarOnTop{
+	left: 0;
+	top:0;
+	margin-bottom: 0;
+	position: fixed;
+	right: 0;
+	z-index: 1030;
 }
 

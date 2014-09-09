@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	
+	$("#overlayPopup").load("bodyLoadAlert.html");
+	$("#overlayPopup").popup("show");
+		
+		
 	$(window).scroll(function() {
 	  if($(window).scrollTop() > 120){
 		$("#navigation").addClass("navigationBarOnTop");

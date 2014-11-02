@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
-	$("#overlayPopup").load("bodyLoadAlert.html");
-	$("#overlayPopup").popup("show");
+	//$("#overlayPopup").load("bodyLoadAlert.html");
+	//$("#overlayPopup").popup("show");
 		
 		
 	$(window).scroll(function() {

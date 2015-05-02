@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
-	//$("#overlayPopup").load("bodyLoadAlert.html");
-	//$("#overlayPopup").popup("show");
+	$("#overlayPopup").load("bodyLoadAlert.html");
+	$("#overlayPopup").popup("show");
 		
 		
 	$(window).scroll(function() {
@@ -58,6 +58,11 @@ $(document).ready(function(){
 	$('body').on('click', '#donateNow', function () {
 		$("#overlayPopup").html("<img src='images/ajax-loader.gif'/>");
 		$("#overlayPopup").load("htmlPages/donateNow.html");
+		$("#overlayPopup").popup("show");
+	});
+	$('body').on('click', '#eoto20142015SideBar', function () {
+		$("#overlayPopup").html("<img src='images/ajax-loader.gif'/>");
+		$("#overlayPopup").load("highlights/EOTOResults2015.html");
 		$("#overlayPopup").popup("show");
 	});
 });

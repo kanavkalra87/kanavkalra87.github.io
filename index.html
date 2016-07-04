@@ -1,72 +1,171 @@
-	<!DOCTYPE html>
-	<!-- Website template by freewebsitetemplates.com -->
-	<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Vivek Singh Memorial Trust - Home</title>
-		<link rel="stylesheet" href="css/style.css" type="text/css">
-		<!--<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css" />-->
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		
-		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-		<script src="js/jquery-1.9.1.min.js"></script>
-		<script src="js/underscore.min.js"></script>
-		<script src="js/backbone.min.js"></script>
-		
-		 <!-- Include jQuery Popup Overlay -->
-		<script src="js/jquery.popupoverlay.js"></script>
-		<script src="js/CustomEvents.js"></script>
-		<link type="text/css" rel="stylesheet" href="light-gallery/css/lightGallery.css" /> 
-		<script src="light-gallery/js/lightGallery.min.js"></script>
-			
-		<script> 
-			$(function(){
-				$("#header").load("header.html"); 
-				$("#navigation").load("navigation.html"); 				
-  				$("#footer").load("footer.html"); 
-				$("#sideBar").load("sideBar.html"); 
-				$("#dynamicBody").load("htmlPages/home.html"); 
-				$("#overlayPopup").popup();
-			});
+<!DOCTYPE html>
+<html>
 
-		</script>
-	</head>
-	<body>
-	
-	<!--
-		<div id="fb-root"></div>
-<script>
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>-->
-	<iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FVivek-Singh-Memorial-Trust%2F166215996761504&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=257570524435335" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;right: 0;top:0;margin-bottom: 0;position: fixed;right: -130px;z-index: 1050; margin-right: 0px ;margin-top: 9px; overflow:hidden" allowTransparency="true"></iframe>
-		<div class="wrapper" style="border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
-		<!--<div class="fb-like" data-href="https://www.facebook.com/pages/Vivek-Singh-Memorial-Trust/166215996761504" data-layout="button_count" data-action="like" data-width="30" data-show-faces="true" data-share="true" style="left: 0;top:0;margin-bottom: 0;position: fixed;right: 0;z-index: 1050; margin-left: 10px ;margin-top: 9px; overflow:hidden"></div>-->
-			<div id="overlayPopup" class="well" style="max-width:44em;"></div>
-			<div id = "header" class="header"></div>
-			<div id="navigation">
-			</div>
-			
-			<div id="generalBody" class="body">
-				<div class="contact">
-					<div id = "sideBar"></div>
-		
-					<div id="dynamicBody">
-					</div>
-				</div>
-			</div>
-			<div id="projectsBody" class="body" style="display:none">
-			</div>
+<head>
+  <meta charset="UTF-8">
+  <title>Vivek Singh Memorial Trust - Home</title>
+  <meta name="keywords" content="Vivek Singh, NIT Durgapur, Scholarship, Charity, Non profit, Memorial Trust">
+  <meta name="description" content="Official website of Vivek Singh Memorial Trust">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/underscore.min.js"></script>
+  <script src="js/backbone.min.js"></script>
+  <script src="js/jquery.popupoverlay.js"></script>
+  <script src="js/CustomEvents.js"></script>
+  <link type="text/css" rel="stylesheet" href="light-gallery/css/lightGallery.css" />
+  <script src="light-gallery/js/lightGallery.min.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <script>
+  $(function() {
+    $("#dynamicBody").load("htmlPages/home.html");
+  });
+  </script>
+</head>
 
-			<div id="footer" class="footer">
-			</div>
+<body>
+  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FVivek-Singh-Memorial-Trust%2F166215996761504&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=257570524435335" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;right: 0;top:0;margin-bottom: 0;position: fixed;right: -130px;z-index: 1050; margin-right: 0px ;margin-top: 9px; overflow:hidden" allowTransparency="true"></iframe>
+  <div class="wrapper" style="border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+    <div id="overlayPopup" class="well" style="max-width:44em;"></div>
+    <div id="header" class="header">
+      <div>
+        <a href="" id="logo" style="top:5px">
+          <img style="131px;height: 103px" src="images/vslogo.svg" alt="Vivek Singh Memorial Trust" />
+        </a>
+        <div>
+          <img style="width:600px;height: 100px;margin-top:10px" src="images/vsHeader.png" alt="Vivek Singh Memorial Trust" />
+        </div>
+      </div>
+    </div>
+    <div id="navigation">
+      <div id="navigatioBar" class="menu">
+        <div class="navigatioBarWrapper">
+          <div id="TopMenu" class="menuitems">
+            <div class="topmenu topmenuSelected" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+              <a href="#home" class="headerLink1" id="homeId">Home</a>
+            </div>
+            <div class="topmenu" style="border-top-left-radius: 10px; border-top-right-radius: 10px; ">
+              <a href="#ourMission" class="headerLink1" id="ourMissionId">Our Mission</a>
+            </div>
+            <div class="topmenu" style="border-top-left-radius: 10px; border-top-right-radius: 10px; ">
+              <a href="#scholarships" class="headerLink1" id="scholarshipsId">Scholarships</a>
+            </div>
+            <div class="topmenu" style="border-top-left-radius: 10px; border-top-right-radius: 10px; ">
+              <a href="#projects" class="headerLink1" id="projectsId">Projects</a>
+            </div>
+            <div class="topmenu" style="border-top-left-radius: 10px; border-top-right-radius: 10px; ">
+              <a href="#highlights" class="headerLink1" id="highlightsId">Activities</a>
+            </div>
+            <div class="topmenu" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+              <a href="#about" class="headerLink1" id="aboutId">About</a>
+            </div>
+            <div class="topmenu" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+              <a href="#contact" class="headerLink1" id="contactId">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="generalBody" class="body">
+      <div class="contact">
+        <div id="sideBar">
+          <button class="anchorButton" id="donateNow" style="color:white"><b>DONATE NOW</b></button>
+          <br>
+          <br>
+          <div>
+            <button id="impLinks">Important Links</button>
+            <div id="impLinksChildDiv">
+              <a style="padding-left:10px;" id="eoto20142015SideBar" href="#">EOTO Results 2014-15</a>
+              <br/>
+              <a style="padding-left:10px;" href="#VivekEkUjjwalBhavishya">VS Ek Ujjwal Bhavishya</a>
+              <br/>
+              <a style="padding-left:10px;" href="#VSMemorialScholarship">VS Memorial Scholarship</a>
+            </div>
+          </div>
+          <br>
+          <div>
+            <button id="newsButton">Latest News</button>
+            <div id="newsChildDiv">
+              <div style="padding-left:10px;">
+                <p>
+                  <b>May 01, 2015</b>
+                  <br/> Annual Results of EOTO Students announced.
+                </p>
+              </div>
+              <hr>
+              <div style="padding-left:10px;">
+                <p>
+                  <b>Jan 01, 2015</b>
+                  <br/> Mr. Subhodeep Ghosh has been selected for the Vivek Singh Memorial Scholarship 2014-15.
+                </p>
+              </div>
+              <hr>
+              <div style="padding-left:10px;">
+                <p>
+                  <b>Apr 01, 2014</b>
+                  <br/> 19 students admitted into the schools under EOTO.
+                </p>
+              </div>
+              <hr>
+              <div style="padding-left:10px;">
+                <p>
+                  <b>Oct 02, 2013</b>
+                  <br/> Organized a blood donation camp in NIT Durgapur.
+                </p>
+              </div>
+              <hr>
+              <div style="padding-left:10px;">
+                <p>
+                  <b>Apr 06, 2013</b>
+                  <br/> 10 students admitted into the schools under EOTO.
+                </p>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div id="dynamicBody">
+        </div>
+      </div>
+    </div>
+    <div id="projectsBody" class="body" style="display:none">
+    </div>
+    <div id="footer" class="footer">
+    <div>
+	<div>
+		<h4>Contact Us</h4>
+		<ul>
+			<li class="email">
+				<a href="mailto:info@vsmemorialtrust.org">info@vsmemorialtrust.org</a>
+			</li>
+			<li class="address">
+				Vivek Singh Memorial Trust<br/>Regd. Off: - GH-13, Flat-4,<br/>SFS Flats,Paschim Vihar,<br/>New Delhi-110087
+			</li>
+		</ul>
+	</div>
+	<div>
+		<h4>Newsletters</h4>
+		<ul>
+			<li>
+				<p>
+					<a target="_blank" href="newsletter/VSMT_Newsletter_2012.pdf">Newsletter - 2012</a>
+				</p>
+			</li>
+		</ul>
+	</div>
+	<div class="connect">
+		<h4>Get in touch with us</h4>
+		<a target="_blank" href="https://www.facebook.com/pages/Vivek-Singh-Memorial-Trust/166215996761504" id="facebook">Facebook</a>
+		<br>
+	</div>
+	</div>
+	<div>
+	<p align="center">
+		Copyright &#169 2016 Vivek Singh Memorial Trust. All Rights Reserved.
+	</p>
+</div>
+    </div>
+  </div>
+</body>
 
-		</div>
-
-	</body>
-	</html>
+</html>
